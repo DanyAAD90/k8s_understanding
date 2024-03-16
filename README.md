@@ -29,16 +29,12 @@ K --> O[koszt]
 flowchart TD
 P[kube-controler-manager] --> R[mngmt grupa wbudowana w klaster]
 P --> S[ns,rs,sa,svc node endpoint token job cronjob controllers]
-P --> U[ns] --> W[logiczna izolacja obiektow na grupy]
+S --> U[ns] --> W[logiczna izolacja obiektow na grupy]
 P --> T[mozna dodac wlasne np ingress na L7 secret controler]
 U --> WA[default nie korzystamy]
 U --> WB[kube-system rzadko sie edytuje]
 U --> WC[kube-node-lease czas asocjacji z obiektem, leasing time]
 U --> WD[kube-public dostepne dla wszystkich]
-```
-subgraph serwer REST/HTTP
-A
-end
 ```
 ```mermaid
 flowchart TD
