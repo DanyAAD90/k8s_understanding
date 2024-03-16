@@ -27,7 +27,7 @@ K --> O[koszt]
 ```
 ```mermaid
 flowchart TD
-P --> R[mngmt grupa wbudowana w klaster]
+P[kube-controler-manager] --> R[mngmt grupa wbudowana w klaster]
 P --> S[ns,rs,sa,svc node endpoint token job cronjob controllers]
 P --> U[ns] --> W[logiczna izolacja obiektow na grupy]
 P --> T[mozna dodac wlasne np ingress na L7 secret controler]
