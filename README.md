@@ -26,6 +26,6 @@ end
 AA[komponenty WORKER] --> AB[kubelet, odpowiada za pody]
 AA --> AC[kube-proxy]
 AC --> AD[port-forwarding, modyfikacje FW, ustawianie filtrów]
-AA --> AE[CRI container runtime interface] --> AF[CRI-RS (runtime service) uruchamianie, zatrzymywanie, usuwanie kontenerów, gRPC]
-AE --> AG[CRI-IS (image service) pobieranie ładowanie usuwanie obrazów] 
+AA --> AE[CRI container runtime interface] --> AF[CRI-RS runtime service, uruchamianie, zatrzymywanie, usuwanie kontenerów, gRPC]
+AE --> AG[CRI-IS image service, pobieranie ładowanie usuwanie obrazów] 
 ```
