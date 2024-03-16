@@ -42,7 +42,7 @@ AE --> AH[np docker ale sa inne runnery np containerd]
 ```mermaid
 flowchart TD
 BA[kontener] --> BB[kubelet] --> BC[pod]
-BC --> BD[paczka binarna]
+BA --> BD[paczka binarna]
 BD --> BE[mozna przenosic]
 BD --> BF[posiada wbudowane biblioteki]
 BD --> BG[posiada wszystkie zaleznosci]
