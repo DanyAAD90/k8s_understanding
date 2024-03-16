@@ -5,4 +5,7 @@ zrozumienie architektury kubernetes
 flowchart TD
 A[kube api server] --> B[etcd]
 A <--> C[kubelet]
+subgraph server REST/HTTP
+A
+end
 ```
