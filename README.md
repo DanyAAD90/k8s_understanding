@@ -5,7 +5,7 @@ zrozumienie architektury kubernetes
 flowchart TD
 A[kube api server] --> B[etcd stan klastra]
 A <--> C[kubelet]
-B --> D[baza danych "key = value"]
+B --> D[baza danych key=value]
 B --> E[stan wszystkich komponentów]
 B --> F[monitoring zadań w klastrze]
 
