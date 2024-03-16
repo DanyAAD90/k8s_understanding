@@ -10,18 +10,18 @@ A --> P[kube-controler-manager]
 ```
 ```mermaid
 flowchart TD
-B --> D[baza danych key=value]
+B[etcd] --> D[baza danych key=value]
 B --> E[stan wszystkich komponentów]
 B --> F[monitoring zadań w klastrze]
 B --> G[stan klastra]
 ```
 ```mermaid
-H --> I[warstwa zarzadzajaca]
+H[kube-scheduler] --> I[warstwa zarzadzajaca]
 H --> J[lokowanie podów do nodów]
 H --> K[matrix metryk skomplikowany system decyzyjny]
 ```
 ```mermaid
-K --> L[dostepnosc zasobów]
+K[matrix metryk skomplikowany system decyzyjny] --> L[dostepnosc zasobów]
 K --> M[wymagania aplikacji]
 K --> N[manualne reguły mngmt]
 K --> O[koszt]
