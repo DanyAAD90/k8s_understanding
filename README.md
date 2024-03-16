@@ -19,7 +19,7 @@ K --> N[manualne reguły mngmt]
 K --> O[koszt]
 A --> P[kube-controler-manager]
 P --> R[mngmt grupa wbudowana w klaster]
-P --> S[ns,rs,sa itp controllers]
+P --> S[ns,rs,sa,svc node endpoint token job cronjob controllers]
 subgraph serwer REST/HTTP
 A
 end
