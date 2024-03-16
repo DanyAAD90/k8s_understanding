@@ -20,10 +20,7 @@ flowchart TD
 H[kube-scheduler] --> I[warstwa zarzadzajaca]
 H --> J[lokowanie podów do nodów]
 H --> K[matrix metryk skomplikowany system decyzyjny]
-```
-```mermaid
-flowchart TD
-K[matrix metryk skomplikowany system decyzyjny] --> L[dostepnosc zasobów]
+K --> L[dostepnosc zasobów]
 K --> M[wymagania aplikacji]
 K --> N[manualne reguły mngmt]
 K --> O[koszt]
@@ -34,9 +31,6 @@ P --> R[mngmt grupa wbudowana w klaster]
 P --> S[ns,rs,sa,svc node endpoint token job cronjob controllers]
 P --> U[ns] --> W[logiczna izolacja obiektow na grupy]
 P --> T[mozna dodac wlasne np ingress na L7 secret controler]
-```
-```mermaid
-flowchart TD
 U --> WA[default nie korzystamy]
 U --> WB[kube-system rzadko sie edytuje]
 U --> WC[kube-node-lease czas asocjacji z obiektem, leasing time]
