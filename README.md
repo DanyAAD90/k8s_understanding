@@ -23,4 +23,8 @@ P --> S[ns,rs,sa itp controllers]
 subgraph serwer REST/HTTP
 A
 end
+AA[komponenty WORKER] --> AB[kubelet, odpowiada za pody]
+AA --> AC[kube-proxy]
+AC --> AD[port-forwarding, modyfikacje FW, ustawianie filtrów]
+AA --> AE[container runtime] --> AF[CRI]
 ```
